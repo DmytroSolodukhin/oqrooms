@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="yandex-verification" content="ef680a1f137132cf" />
+
+    {% block title %}
+        <title>
+            Oculto
+        </title>
+    {% endblock %}
+
+    {% block metateg %}
+        <meta name="description" content="">
+        <meta name="keywords" content="" />
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block page_head_css %}
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+        <link href="/css/slidup.css" rel="stylesheet">
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+        <script src="/js/respond.min.js"></script>
+
+    {% endblock %}
+
+    {% block page_head_js %}
+
+    {% endblock %}
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTWTQXP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse pull-right">
+                <div class="nav navbar navbar-default navbar-fixed-top container-fluid" role="navigation">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                            <span class="sr-only">Меню</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="{{ path('web_homepage') }}" title="Главная"><img src="/images/logo/OQ-rooms2.png" width="90px" alt="квест румы occulto quest"> </a>
+                    </div>
+                    <div class="navbar-collapse collapse navbar-link">
+                        {% block hed_phone %}
+                            <span>
+                                <a href="tel:+380503883688" title="телефон">+38(050)388-36-88</a>
+                            </span>
+                        {% endblock %}
+                        {% block topMenu %}
+                            {% include 'WebBundle::menu.html.twig' %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block myCanvas %}
+    <canvas id="myCanvas" height="400"  style="background: rgba(0, 0, 0, 0) url('/images/background.jpg') repeat fixed 55% 32%"></canvas>
+{% endblock %}
+
+
+{% block welcome %}
+    <div class="parallax" style="background: black">
+        <img class="logop" src="/images/logo/OQ-rooms2.png" alt="квест комнаты occulto quest">
+    </div>
+{% endblock %}
+
+<main>
+{% block content %}
+        <div class="jumbotron">
+            <div class="container">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+{% endblock %}
+</main>
+
+
+{% block footer %}
+    <div class="second_block">
+        <div class="row">
+            {% block phone %}
+            <div class="col-sm-4">
+                <div class="phone">
+                    <a href="tel:+380503883688" title="телефон">
+                        <i class="icon-phone"></i>
+                        +38(050)388-36-88
+                    </a>
+                </div>
+            </div>
+            {% endblock %}
+            <div class="col-sm-4">
+                <div class="email">
+                    <a href="mailto:oqrooms@gmail.com" title="почта">
+                        <i class="icon-envelope"></i>
+                        oqrooms@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+                <div class="col-sm-2 col-sm-offset-1">
+                        <a target="_blank" title="facebook"
+                           href="https://www.facebook.com/oqrooms.odessa">
+                            <i class="icon-facebook"></i>
+                        </a>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-1">
+                        <a target="_blank" title="vk" href="https://www.vk.com/oqrooms">
+                            <i class="icon-vk"></i>
+                        </a>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-1">
+                        <a href="https://www.instagram.com/oqrooms" title="instagram" target="_blank">
+                            <i class="icon-instagram"></i>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright-block dark-bg clearfix">
+            <div class="container">
+                <div class="pull-left">
+                    <p class="pull-left">Copyright &copy; 2016 by <a href="mailto:dmitreysergeevich86@gmail.com">DSolo</a>. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    {% block footer_js %}
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/jquery.colorbox-min.js"></script>
+        <script src="/js/main.js"></script>
+    {% endblock %}
+{% endblock %}
+    </body>
+</html>

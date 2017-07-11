@@ -1,0 +1,5 @@
+[11-Jul-2017 03:55:44 America/Chicago] PHP Fatal error:  Call to undefined method CoreBundle\Entity\Quest::getSms() in /home/oqroomsc/public_html/oqroom/src/CoreBundle/Handler/TimeHandler.php on line 117
+[11-Jul-2017 03:59:46 America/Chicago] PHP Fatal error:  Call to undefined method CoreBundle\Entity\Quest::getSms() in /home/oqroomsc/public_html/oqroom/src/CoreBundle/Handler/TimeHandler.php on line 117
+[11-Jul-2017 04:13:14 America/Chicago] PHP Fatal error:  Call to undefined method CoreBundle\Entity\Quest::getSms() in /home/oqroomsc/public_html/oqroom/src/CoreBundle/Handler/TimeHandler.php on line 117
+[11-Jul-2017 05:49:11 America/Chicago] PHP Fatal error:  Call to undefined method CoreBundle\Entity\Quest::getSms() in /home/oqroomsc/public_html/oqroom/src/CoreBundle/Handler/TimeHandler.php on line 117
+[11-Jul-2017 05:53:48 America/Chicago] PHP Fatal error:  Call to undefined method CoreBundle\Entity\Quest::getSms() in /home/oqroomsc/public_html/oqroom/src/CoreBundle/Handler/TimeHandler.php on line 107
