@@ -127,17 +127,20 @@ function TableVisitViewModel(time_visit, visit, quest_id, params) {
         }else{
             $('#Email').removeClass('error_input');
         }
+
+
         if(!error){
             var request = {
                 name:        that.name(),
                 phone:       that.phone(),
-                email:        that.email(),
+                email:       that.email(),
+                description: that.description(),
                 quest:       quest_id,
                 visit:       that.curentPrice().id,
                 count:       that.curentPrice().count,
                 time:        that.curentPrice().title,
                 date:        that.curentDate(),
-                price:       that.curentPrice().price,
+                price:       that.curentPrice().price
             };
             $('#preloader').show();
 

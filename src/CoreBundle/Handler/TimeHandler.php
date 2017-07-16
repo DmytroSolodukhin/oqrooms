@@ -73,6 +73,7 @@ class TimeHandler extends EntityHandler
         $newTime->setQuest($quest)
             ->setPhone($data->get('phone'))
             ->setEmail($data->get('email'))
+            ->setDescription($data->get('description'))
             ->setOpen($date)
             ->setVisit($visit)
             ->setTitle($data->get('name'))
