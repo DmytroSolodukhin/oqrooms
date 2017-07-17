@@ -211,12 +211,7 @@
                     pay: {{ quest.plusPay }},
                     primeDate: []
                 };
-        {% for pdate in quest.primeDate %}
-        params.primeDate.push({
-            date: "{{ pdate.date|date('n_j_Y') }}",
-            price: {{ pdate.price }}
-        });
-        {% endfor %}
+
 
         {% for time_visit in quest.time %}
 

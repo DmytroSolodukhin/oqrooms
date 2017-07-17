@@ -179,15 +179,6 @@ class CustomerController extends Controller
                 'label'  => 'Сайт',
                 'required' => false
             ])
-            ->add('primeDate', 'collection', [
-                'type' => new PrymeDayType(),
-                'allow_add' => true,
-//                'delete_empty' => true,
-//                'prototype' => true,
-//                'allow_delete' => true,
-                'by_reference' => false,
-                'label'  => 'Определенные дни',
-            ])
             ->add('open', 'collection', [
                 'type' => new VisitType(),
                 'allow_add' => true,
