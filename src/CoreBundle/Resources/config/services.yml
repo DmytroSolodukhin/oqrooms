@@ -37,7 +37,7 @@ services:
             - 'SonataAdminBundle:CRUD'
 
     type.quest:
-        class: CoreBundle\Admin\TypeAdmin
+        class: CoreBundle\Admin\TypeGameAdmin
         tags:
             - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-gamepad"></i>', group: "Квесты", label: "Тип" }
         arguments:

@@ -35,29 +35,29 @@
             {% if not quest.inprogress %}
                 <div class="col-lg-4 quest_blocks animated fadeInUpBig"
                      style="background: url('/uploads/{% if quest.background %}{{ quest.background }}{% else %}{{ quest.image }}{% endif %}') repeat 0 0 scroll; background-size: contain;">
-                    <a href="{{ path('web_quest', {'id': quest.id}) }}"  title="{{ quest.title }}">
-                        <div class="options_q">
+                    {#<a href="{{ path('web_quest', {'id': quest.id}) }}"  title="{{ quest.title }}">#}
+                        {#<div class="options_q">#}
 
-                            <strong style="float: right; margin: -5px 0 0;">
-                                Cложность :
-                                {% for i in 0..4 %}
-                                    {% if i <= quest.complexity %}
-                                        <img src="/images/omega.png" width="20px" alt="{{ quest.title }} big complexity">
-                                    {% endif %}
-                                {% endfor %}
-                            </strong>
-                        </div>
-                    <div class="transparency"></div>
+                            {#<strong style="float: right; margin: -5px 0 0;">#}
+                                {#Cложность :#}
+                                {#{% for i in 0..4 %}#}
+                                    {#{% if i <= quest.complexity %}#}
+                                        {#<img src="/images/omega.png" width="20px" alt="{{ quest.title }} big complexity">#}
+                                    {#{% endif %}#}
+                                {#{% endfor %}#}
+                            {#</strong>#}
+                        {#</div>#}
+                    {#<div class="transparency"></div>#}
                     {#<strong>{{ quest.city.title }}</strong>#}
-                    <h2>{{ quest.title }}</h2>
+                    {#<h2>{{ quest.title }}</h2>#}
 
                     {#{% if quest.description|length > 300 %}{{ quest.description|slice(0, 300)|raw }}...</p>{% else %}#}
                         {#{{  quest.description|raw}}#}
                     {#{% endif %}#}
-                        <div class="options_q_footer">
-                            <strong style="float: right"><i class="icon-user" style="color: white"></i> : 2-{{ quest.count }}{% if quest.maxCount %}({{ quest.maxCount }}){% endif %}</strong>
-                        </div>
-                    </a>
+                        {#<div class="options_q_footer">#}
+                            {#<strong style="float: right"><i class="icon-user" style="color: white"></i> : 2-{{ quest.count }}{% if quest.maxCount %}({{ quest.maxCount }}){% endif %}</strong>#}
+                        {#</div>#}
+                    {#</a>#}
                 </div>
             {% else %}
                 <div class="col-lg-4 quest_blocks animated fadeInUpBig todown"

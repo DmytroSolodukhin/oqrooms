@@ -8,7 +8,7 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
 /**
- * Class: TypeAdmin.php
+ * Class: TypeGameAdmin.php
  */
 class TypeGameAdmin extends  Admin
 {

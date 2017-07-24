@@ -40,7 +40,7 @@ trait ITDTrait
      *
      * @ORM\Column(type="string")
      */
-    protected $title;
+    public $title;
 
     /**
      * @JMS\Expose
@@ -108,9 +108,11 @@ trait ITDTrait
         return $this;
     }
 
-
+    /**
+     * @return string
+     */
     public function __toString()
     {
-        return $this->title;
+        return $this->title ? $this->title : '';
     }
 }

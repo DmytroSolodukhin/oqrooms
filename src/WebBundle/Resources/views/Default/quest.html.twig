@@ -30,26 +30,27 @@
 </div>
 <section>
     <div class="index_text_block_quest row" id="first">
-        <div class="col-sm-10 col-md-offset-1 quest_blocks">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center quest_blocks">
             <h1>
                 {{ quest.title }}
             </h1>
-            <div class="col-sm-11 col-sm-offset-1">
-                <img src="/uploads/{{ quest.image }}" style="float: left; width: 300px; margin: 0 25px 25px 0" alt="квест комната: {{ quest.title }}">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <img src="/uploads/{{ quest.image }}" style="float: left; width: 300px; margin: 0 25px 25px 0" alt="{{ quest.title }}">
+
                 {{ quest.description|raw }}
             </div>
-            <div class="col-sm-8" style="text-align: left">
-                <strong><i class="icon-user" style="color: white"></i> : 2-{{ quest.count }}{% if quest.maxCount %}({{ quest.maxCount }}){% endif %}</strong>
-                </br>
-                <strong>
-                    Cложность :
-                    {% for i in 0..4 %}
-                        {% if i <= quest.complexity %}
-                            <img src="/images/omega.png" width="30px" alt="{{ quest.title }} big complexity">
-                        {% endif %}
-                    {% endfor %}
-                </strong>
-            </div>
+            {#<div class="col-sm-8" style="text-align: left">#}
+                {#<strong><i class="icon-user" style="color: white"></i> : 2-{{ quest.count }}{% if quest.maxCount %}({{ quest.maxCount }}){% endif %}</strong>#}
+                {#</br>#}
+                {#<strong>#}
+                    {#Cложность :#}
+                    {#{% for i in 0..4 %}#}
+                        {#{% if i <= quest.complexity %}#}
+                            {#<img src="/images/omega.png" width="30px" alt="{{ quest.title }} big complexity">#}
+                        {#{% endif %}#}
+                    {#{% endfor %}#}
+                {#</strong>#}
+            {#</div>#}
         </div>
     </div>
 </section>
@@ -158,8 +159,8 @@
                         <br>
                     </fieldset>
                     </div>
-                    <div class="col-lg-4">
-                        <label for="Description">Пожелания:</label>
+                    <div class="col-lg-4 text-center">
+                        <label for="Description">Пожелания:</label><br/>
                         <textarea type="text" id="Description" data-bind="value: description" name="description">
 
                         </textarea>
@@ -237,10 +238,10 @@
 {% endblock %}
 
 {% block phone %}
-<div class="col-sm-4">
+<div>
     <div class="phone">
         <i class="icon-phone"></i>
-        <a href="tel:{{ quest.user.phone }}">{{ quest.user.phone }}</a>
+        <a href="tel:{{ quest.phone }}">{{ quest.phone }}</a>
     </div>
 </div>
 {% endblock %}

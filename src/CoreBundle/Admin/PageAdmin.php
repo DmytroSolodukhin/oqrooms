@@ -23,7 +23,7 @@ class PageAdmin extends  Admin
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('title', 'text', [
+        $formMapper->add('title', null, [
                 'label' => 'название',
             ])
            ->add('description', 'sonata_simple_formatter_type', [
