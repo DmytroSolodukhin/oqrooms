@@ -358,6 +358,13 @@ footer {
     transform: rotate(45deg);
     width: 80px;
     z-index: 6;
+
+    -webkit-animation: 2s linear infinite scale;
+}
+
+@-webkit-keyframes scale {
+    from {transform: scale(0.5) rotate(45deg);}
+    to {transform: scale(1) rotate(45deg);}
 }
 
 #mounth_visit {
@@ -922,4 +929,16 @@ em {
 .index_text_block_quest p > img {
     width: 100%!important;
     height: auto!important;
+}
+
+.quest_img {
+    float: left;
+    width: 300px;
+    margin: 0 25px 25px 0;
+}
+
+@media (max-width: 740px) {
+    .quest_img {
+       margin: 0 auto;
+    }
 }

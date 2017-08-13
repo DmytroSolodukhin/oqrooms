@@ -81,9 +81,9 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
     {
         // line 19
         echo "                <span><a href=\"tel: ";
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["quest"] ?? null), "user", array()), "phone", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "phone", array()), "html", null, true);
         echo "\">";
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["quest"] ?? null), "user", array()), "phone", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "phone", array()), "html", null, true);
         echo "</a></span>
             ";
     }
@@ -105,62 +105,51 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 </div>
 <section>
     <div class=\"index_text_block_quest row\" id=\"first\">
-        <div class=\"col-sm-10 col-md-offset-1 quest_blocks\">
+        <div class=\"col-sm-12 col-md-12 col-lg-12 text-center quest_blocks\">
             <h1>
                 ";
         // line 35
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "
             </h1>
-            <div class=\"col-sm-11 col-sm-offset-1\">
-                <img src=\"/uploads/";
+            <div class=\"col-sm-12 col-md-12 col-lg-12 text-center\">
+                <img class=\"quest-img\" src=\"/uploads/";
         // line 38
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "image", array()), "html", null, true);
-        echo "\" style=\"float: left; width: 300px; margin: 0 25px 25px 0\" alt=\"квест комната: ";
+        echo "\"  alt=\"";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "\">
+
                 ";
-        // line 39
+        // line 40
         echo $this->getAttribute(($context["quest"] ?? null), "description", array());
         echo "
             </div>
-            <div class=\"col-sm-8\" style=\"text-align: left\">
-                <strong><i class=\"icon-user\" style=\"color: white\"></i> : 2-";
-        // line 42
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "count", array()), "html", null, true);
-        if ($this->getAttribute(($context["quest"] ?? null), "maxCount", array())) {
-            echo "(";
-            echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "maxCount", array()), "html", null, true);
-            echo ")";
-        }
-        echo "</strong>
-                </br>
-                <strong>
-                    Cложность :
-                    ";
+            ";
+        // line 43
+        echo "                ";
+        // line 44
+        echo "                ";
+        // line 45
+        echo "                ";
         // line 46
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(range(0, 4));
-        foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 47
-            echo "                        ";
-            if (($context["i"] <= $this->getAttribute(($context["quest"] ?? null), "complexity", array()))) {
-                // line 48
-                echo "                            <img src=\"/images/omega.png\" width=\"30px\" alt=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
-                echo " big complexity\">
-                        ";
-            }
-            // line 50
-            echo "                    ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
+        echo "                    ";
+        // line 47
+        echo "                    ";
+        // line 48
+        echo "                        ";
+        // line 49
+        echo "                            ";
+        // line 50
+        echo "                        ";
         // line 51
-        echo "                </strong>
-            </div>
-        </div>
+        echo "                    ";
+        // line 52
+        echo "                ";
+        // line 53
+        echo "            ";
+        // line 54
+        echo "        </div>
     </div>
 </section>
 <br>
@@ -169,16 +158,16 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
          style=\"background: rgba(0,0,0, 0.7);\">
         <div class=\"phone\">
             <h1>";
-        // line 61
+        // line 62
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["quest"] ?? null), "city", array()), "title", array()), "html", null, true);
         if ($this->getAttribute(($context["quest"] ?? null), "addres", array())) {
             echo ", ";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "addres", array()), "html", null, true);
         }
-        // line 62
+        // line 63
         echo "                <i class=\"icon-phone\"></i>
                 <a href=\"tel:";
-        // line 63
+        // line 64
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "phone", array()), "html", null, true);
         echo "\" style=\"color: white\">";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "phone", array()), "html", null, true);
@@ -190,7 +179,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
             <div id=\"mounth_visit\" class=\"row\" data-bind=\"foreach: mounthList()\">
                 <div class=\"row\">
                     <div class=\"col-sm-";
-        // line 70
+        // line 71
         echo twig_escape_filter($this->env, (12 - twig_length_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "open", array()))), "html", null, true);
         echo " quest_table_name day\">
                         <h4 data-bind=\"text: value.date+' '+value.title+' - '+value.name\">
@@ -218,7 +207,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
         <script>
             function initMap() {
                 var myLatlng = new google.maps.LatLng({lat: ";
-        // line 95
+        // line 96
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "lat", array()), "html", null, true);
         echo ", lng: ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "lng", array()), "html", null, true);
@@ -231,7 +220,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
                 };
                 var map = new google.maps.Map(document.getElementById(\"map\"), myOptions),
                         contentString = '<h3 style=\"color: black\">";
-        // line 103
+        // line 104
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "</h3>',
                         infowindow = new google.maps.InfoWindow({
@@ -242,7 +231,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
                             map: map,
                             draggable: false,
                             title: \"";
-        // line 111
+        // line 112
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "\"
                         });
@@ -259,7 +248,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
     <div id=\"billing_popup\" data-bind=\"visible: showBilling()\">
         <div class=\"scroll\">
            <h1>";
-        // line 125
+        // line 126
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "</h1>
             <div class=\"closePopup\" data-bind=\"click: closePopup()\">X</div>
@@ -297,8 +286,8 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
                         <br>
                     </fieldset>
                     </div>
-                    <div class=\"col-lg-4\">
-                        <label for=\"Description\">Пожелания:</label>
+                    <div class=\"col-lg-4 text-center\">
+                        <label for=\"Description\">Пожелания:</label><br/>
                         <textarea type=\"text\" id=\"Description\" data-bind=\"value: description\" name=\"description\">
 
                         </textarea>
@@ -306,7 +295,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
                             <label for=\"description\">Количество человек:</label>
                             <br>
                             <input type=\"number\" id=\"numberUser\" value=\"4\"  maxlength=\"2\" min=\"2\" max=\"";
-        // line 169
+        // line 170
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "maxCount", array()), "html", null, true);
         echo "\" autocomplete=\"off\">
                             <br>
@@ -322,7 +311,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 
 <div id=\"success\">
     <h1>";
-        // line 182
+        // line 183
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "</h1>
     <div class=\"closePopup\" data-bind=\"click: closeSuccessPopup()\">X</div>
@@ -334,7 +323,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 
 <div id=\"errorSuccess\">
     <h1>";
-        // line 191
+        // line 192
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "title", array()), "html", null, true);
         echo "</h1>
     <div class=\"closePopup\" data-bind=\"click: closeerrorSuccess()\">X</div>
@@ -345,10 +334,10 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 ";
     }
 
-    // line 199
+    // line 200
     public function block_footer_js($context, array $blocks = array())
     {
-        // line 200
+        // line 201
         echo "    ";
         $this->displayParentBlock("footer_js", $context, $blocks);
         echo "
@@ -361,15 +350,15 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
                 visit = [],
                 params = {
                     maxCount: ";
-        // line 209
+        // line 210
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "maxCount", array()), "html", null, true);
         echo ",
                     count: ";
-        // line 210
+        // line 211
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "count", array()), "html", null, true);
         echo ",
                     pay: ";
-        // line 211
+        // line 212
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "plusPay", array()), "html", null, true);
         echo ",
                     primeDate: []
@@ -377,27 +366,27 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 
 
         ";
-        // line 216
+        // line 217
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["quest"] ?? null), "time", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["time_visit"]) {
-            // line 217
+            // line 218
             echo "
             time_visit.push({
                 date: '";
-            // line 219
+            // line 220
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["time_visit"], "open", array()), "n_j_Y"), "html", null, true);
             echo "',
                 name: '";
-            // line 220
+            // line 221
             echo twig_escape_filter($this->env, $this->getAttribute($context["time_visit"], "title", array()), "html", null, true);
             echo "',
                 id_visit: '";
-            // line 221
+            // line 222
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["time_visit"], "visit", array()), "id", array()), "html", null, true);
             echo "',
                 time: '";
-            // line 222
+            // line 223
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["time_visit"], "visit", array()), "title", array()), "html", null, true);
             echo "'
             });
@@ -406,25 +395,25 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['time_visit'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 225
+        // line 226
         echo "
         ";
-        // line 226
+        // line 227
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["quest"] ?? null), "open", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["open"]) {
-            // line 227
+            // line 228
             echo "        visit.push({
                 id: ";
-            // line 228
+            // line 229
             echo twig_escape_filter($this->env, $this->getAttribute($context["open"], "id", array()), "html", null, true);
             echo ",
                 title: '";
-            // line 229
+            // line 230
             echo twig_escape_filter($this->env, $this->getAttribute($context["open"], "title", array()), "html", null, true);
             echo "',
                 price: ";
-            // line 230
+            // line 231
             echo twig_escape_filter($this->env, $this->getAttribute($context["open"], "price", array()), "html", null, true);
             echo "
             });
@@ -435,7 +424,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['open'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 235
+        // line 236
         echo "        ko.applyBindings(new TableVisitViewModel(time_visit, visit, ";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "id", array()), "html", null, true);
         echo ", params));
@@ -443,18 +432,18 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 ";
     }
 
-    // line 239
+    // line 240
     public function block_phone($context, array $blocks = array())
     {
-        // line 240
-        echo "<div class=\"col-sm-4\">
+        // line 241
+        echo "<div>
     <div class=\"phone\">
         <i class=\"icon-phone\"></i>
         <a href=\"tel:";
-        // line 243
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["quest"] ?? null), "user", array()), "phone", array()), "html", null, true);
+        // line 244
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "phone", array()), "html", null, true);
         echo "\">";
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["quest"] ?? null), "user", array()), "phone", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["quest"] ?? null), "phone", array()), "html", null, true);
         echo "</a>
     </div>
 </div>
@@ -473,7 +462,7 @@ class __TwigTemplate_d549430e160f92ec63c38f253dff5d3aa5af55638a39022ca4f249f43f9
 
     public function getDebugInfo()
     {
-        return array (  455 => 243,  450 => 240,  447 => 239,  439 => 235,  428 => 230,  424 => 229,  420 => 228,  417 => 227,  413 => 226,  410 => 225,  401 => 222,  397 => 221,  393 => 220,  389 => 219,  385 => 217,  381 => 216,  373 => 211,  369 => 210,  365 => 209,  352 => 200,  349 => 199,  338 => 191,  326 => 182,  310 => 169,  263 => 125,  246 => 111,  235 => 103,  222 => 95,  194 => 70,  182 => 63,  179 => 62,  173 => 61,  161 => 51,  155 => 50,  149 => 48,  146 => 47,  142 => 46,  130 => 42,  124 => 39,  118 => 38,  112 => 35,  100 => 25,  97 => 24,  92 => 21,  83 => 19,  80 => 18,  75 => 16,  69 => 13,  66 => 12,  58 => 9,  53 => 8,  50 => 7,  41 => 4,  38 => 3,  35 => 2,  11 => 1,);
+        return array (  444 => 244,  439 => 241,  436 => 240,  428 => 236,  417 => 231,  413 => 230,  409 => 229,  406 => 228,  402 => 227,  399 => 226,  390 => 223,  386 => 222,  382 => 221,  378 => 220,  374 => 218,  370 => 217,  362 => 212,  358 => 211,  354 => 210,  341 => 201,  338 => 200,  327 => 192,  315 => 183,  299 => 170,  252 => 126,  235 => 112,  224 => 104,  211 => 96,  183 => 71,  171 => 64,  168 => 63,  162 => 62,  152 => 54,  150 => 53,  148 => 52,  146 => 51,  144 => 50,  142 => 49,  140 => 48,  138 => 47,  136 => 46,  134 => 45,  132 => 44,  130 => 43,  125 => 40,  118 => 38,  112 => 35,  100 => 25,  97 => 24,  92 => 21,  83 => 19,  80 => 18,  75 => 16,  69 => 13,  66 => 12,  58 => 9,  53 => 8,  50 => 7,  41 => 4,  38 => 3,  35 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

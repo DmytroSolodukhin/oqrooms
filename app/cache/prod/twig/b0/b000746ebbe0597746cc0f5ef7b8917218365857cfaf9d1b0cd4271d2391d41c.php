@@ -90,11 +90,9 @@ height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>
                             <span class=\"icon-bar\"></span>
                             <span class=\"icon-bar\"></span>
                         </button>
-                        <a href=\"";
-        // line 67
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("web_homepage");
-        echo "\" title=\"Главная\"><img src=\"/images/logo/OQ-rooms2.png\" width=\"90px\" alt=\"квест румы occulto quest\"> </a>
-                    </div>
+                        ";
+        // line 68
+        echo "                    </div>
                     <div class=\"navbar-collapse collapse navbar-link\">
                         ";
         // line 70
@@ -210,7 +208,7 @@ height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>
     public function block_welcome($context, array $blocks = array())
     {
         // line 91
-        echo "    <div class=\"parallax\" style=\"background: black\">
+        echo "    <div class=\"parallax\" style=\"background: rgba(0, 0, 0, 0)\">
         <img class=\"logop\" src=\"/images/logo/OQ-rooms-hq.png\" alt=\"квест комнаты occulto quest\">
         <h1 class=\"intro-text text-center\">Квесты в реальности!</h1>
 
@@ -343,14 +341,9 @@ height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>
         return "WebBundle::pagelayout.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  334 => 186,  331 => 185,  327 => 125,  319 => 118,  316 => 117,  312 => 185,  259 => 134,  257 => 133,  250 => 127,  248 => 126,  246 => 117,  241 => 114,  238 => 113,  225 => 100,  222 => 99,  213 => 91,  210 => 90,  205 => 86,  202 => 85,  198 => 77,  195 => 76,  192 => 75,  185 => 71,  182 => 70,  177 => 34,  174 => 33,  164 => 25,  161 => 24,  155 => 18,  152 => 17,  145 => 12,  142 => 11,  136 => 192,  134 => 113,  129 => 110,  127 => 99,  123 => 97,  121 => 90,  117 => 88,  115 => 85,  106 => 78,  103 => 75,  101 => 70,  95 => 67,  62 => 36,  60 => 33,  57 => 32,  55 => 24,  50 => 21,  48 => 17,  45 => 16,  43 => 11,  31 => 1,);
+        return array (  332 => 186,  329 => 185,  325 => 125,  317 => 118,  314 => 117,  310 => 185,  257 => 134,  255 => 133,  248 => 127,  246 => 126,  244 => 117,  239 => 114,  236 => 113,  223 => 100,  220 => 99,  211 => 91,  208 => 90,  203 => 86,  200 => 85,  196 => 77,  193 => 76,  190 => 75,  183 => 71,  180 => 70,  175 => 34,  172 => 33,  162 => 25,  159 => 24,  153 => 18,  150 => 17,  143 => 12,  140 => 11,  134 => 192,  132 => 113,  127 => 110,  125 => 99,  121 => 97,  119 => 90,  115 => 88,  113 => 85,  104 => 78,  101 => 75,  99 => 70,  95 => 68,  62 => 36,  60 => 33,  57 => 32,  55 => 24,  50 => 21,  48 => 17,  45 => 16,  43 => 11,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

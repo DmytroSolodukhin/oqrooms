@@ -125,80 +125,31 @@ class __TwigTemplate_bcf44a3314a703f4c0bffd8a55ab41eb11a1a1a485cf228a27a34088bd0
             echo "            ";
             if ( !$this->getAttribute($context["quest"], "inprogress", array())) {
                 // line 36
-                echo "                <div class=\"col-lg-4 quest_blocks animated fadeInUpBig\"
-                     style=\"background: url('/uploads/";
-                // line 37
+                echo "             <a href=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("web_quest", array("id" => $this->getAttribute($context["quest"], "id", array()))), "html", null, true);
+                echo "\"  title=\"";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
+                echo "\">
+                <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig\">
+                     ";
+                // line 39
+                echo "                   <img class=\"qwests_img\" src=\"/uploads/";
                 if ($this->getAttribute($context["quest"], "background", array())) {
                     echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "background", array()), "html", null, true);
                 } else {
                     echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "image", array()), "html", null, true);
                 }
-                echo "') repeat 0 0 scroll; background-size: contain;\">
-                    <a href=\"";
-                // line 38
-                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("web_quest", array("id" => $this->getAttribute($context["quest"], "id", array()))), "html", null, true);
-                echo "\"  title=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
                 echo "\">
-                        <div class=\"options_q\">
 
-                            <strong style=\"float: right; margin: -5px 0 0;\">
-                                Cложность :
-                                ";
-                // line 43
-                $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(range(0, 4));
-                foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                    // line 44
-                    echo "                                    ";
-                    if (($context["i"] <= $this->getAttribute($context["quest"], "complexity", array()))) {
-                        // line 45
-                        echo "                                        <img src=\"/images/omega.png\" width=\"20px\" alt=\"";
-                        echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
-                        echo " big complexity\">
-                                    ";
-                    }
-                    // line 47
-                    echo "                                ";
-                }
-                $_parent = $context['_parent'];
-                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
-                $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 48
-                echo "                            </strong>
-                        </div>
-                    <div class=\"transparency\"></div>
-                    ";
-                // line 52
-                echo "                    <h2>";
-                echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
-                echo "</h2>
-
-                    ";
-                // line 55
-                echo "                        ";
-                // line 56
-                echo "                    ";
-                // line 57
-                echo "                        <div class=\"options_q_footer\">
-                            <strong style=\"float: right\"><i class=\"icon-user\" style=\"color: white\"></i> : 2-";
-                // line 58
-                echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "count", array()), "html", null, true);
-                if ($this->getAttribute($context["quest"], "maxCount", array())) {
-                    echo "(";
-                    echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "maxCount", array()), "html", null, true);
-                    echo ")";
-                }
-                echo "</strong>
-                        </div>
-                    </a>
                 </div>
+                </a>
             ";
             } else {
-                // line 63
-                echo "                <div class=\"col-lg-4 quest_blocks animated fadeInUpBig todown\"
-                     style=\"background: url(";
-                // line 64
+                // line 44
+                echo "                <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig todown\">
+                     ";
+                // line 46
+                echo "                    <img class=\"qwests_img\" src=\"";
                 if ($this->getAttribute($context["quest"], "background", array())) {
                     echo "'/uploads/";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "background", array()), "html", null, true);
@@ -210,44 +161,44 @@ class __TwigTemplate_bcf44a3314a703f4c0bffd8a55ab41eb11a1a1a485cf228a27a34088bd0
                 } else {
                     echo "'/images/logo/logo_w.png'";
                 }
-                echo ") repeat 0 0 scroll;
-                     background-size: contain; opacity: 0.78;\">
+                echo "\">
+
                     <div class=\"inproggress\"></div>
                     <h2>";
-                // line 67
+                // line 49
                 echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
                 echo ".
                         ";
-                // line 68
+                // line 50
                 if ($this->getAttribute($context["quest"], "inprogress", array())) {
-                    // line 69
+                    // line 51
                     echo "                            ";
                     if ($this->getAttribute($context["quest"], "startTime", array())) {
-                        // line 70
+                        // line 52
                         echo "                                Открытие квеста (";
                         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["quest"], "startTime", array()), "d/m/y"), "html", null, true);
                         echo ")
                             ";
                     } else {
-                        // line 72
+                        // line 54
                         echo "                                Этот квест в процессе разработки
                             ";
                     }
-                    // line 74
+                    // line 56
                     echo "                        ";
                 }
-                // line 75
+                // line 57
                 echo "                    </h2>
                 </div>
             ";
             }
-            // line 78
+            // line 60
             echo "        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['quest'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 61
         echo "        </section>
     </div>
 </div>
@@ -255,10 +206,10 @@ class __TwigTemplate_bcf44a3314a703f4c0bffd8a55ab41eb11a1a1a485cf228a27a34088bd0
 ";
     }
 
-    // line 85
+    // line 67
     public function block_footer_js($context, array $blocks = array())
     {
-        // line 86
+        // line 68
         echo "    ";
         $this->displayParentBlock("footer_js", $context, $blocks);
         echo "
@@ -280,7 +231,7 @@ class __TwigTemplate_bcf44a3314a703f4c0bffd8a55ab41eb11a1a1a485cf228a27a34088bd0
 
     public function getDebugInfo()
     {
-        return array (  262 => 86,  259 => 85,  251 => 79,  245 => 78,  240 => 75,  237 => 74,  233 => 72,  227 => 70,  224 => 69,  222 => 68,  218 => 67,  202 => 64,  199 => 63,  186 => 58,  183 => 57,  181 => 56,  179 => 55,  173 => 52,  168 => 48,  162 => 47,  156 => 45,  153 => 44,  149 => 43,  139 => 38,  131 => 37,  128 => 36,  125 => 35,  121 => 34,  116 => 31,  105 => 29,  101 => 28,  91 => 20,  88 => 19,  83 => 16,  76 => 13,  73 => 12,  59 => 9,  46 => 8,  43 => 7,  36 => 3,  33 => 2,  11 => 1,);
+        return array (  213 => 68,  210 => 67,  202 => 61,  196 => 60,  191 => 57,  188 => 56,  184 => 54,  178 => 52,  175 => 51,  173 => 50,  169 => 49,  152 => 46,  149 => 44,  136 => 39,  128 => 36,  125 => 35,  121 => 34,  116 => 31,  105 => 29,  101 => 28,  91 => 20,  88 => 19,  83 => 16,  76 => 13,  73 => 12,  59 => 9,  46 => 8,  43 => 7,  36 => 3,  33 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
