@@ -33,36 +33,18 @@
             </div>
         {% for quest in quests %}
             {% if not quest.inprogress %}
-                <div class="col-lg-4 quest_blocks animated fadeInUpBig"
-                     style="background: url('/uploads/{% if quest.background %}{{ quest.background }}{% else %}{{ quest.image }}{% endif %}') repeat 0 0 scroll; background-size: contain;">
-                    {#<a href="{{ path('web_quest', {'id': quest.id}) }}"  title="{{ quest.title }}">#}
-                        {#<div class="options_q">#}
+             <a href="{{ path('web_quest', {'id': quest.id}) }}"  title="{{ quest.title }}">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig">
+                     {#style="background: #}
+                   <img class="qwests_img" src="/uploads/{% if quest.background %}{{ quest.background }}{% else %}{{ quest.image }}{% endif %}">
 
-                            {#<strong style="float: right; margin: -5px 0 0;">#}
-                                {#Cложность :#}
-                                {#{% for i in 0..4 %}#}
-                                    {#{% if i <= quest.complexity %}#}
-                                        {#<img src="/images/omega.png" width="20px" alt="{{ quest.title }} big complexity">#}
-                                    {#{% endif %}#}
-                                {#{% endfor %}#}
-                            {#</strong>#}
-                        {#</div>#}
-                    {#<div class="transparency"></div>#}
-                    {#<strong>{{ quest.city.title }}</strong>#}
-                    {#<h2>{{ quest.title }}</h2>#}
-
-                    {#{% if quest.description|length > 300 %}{{ quest.description|slice(0, 300)|raw }}...</p>{% else %}#}
-                        {#{{  quest.description|raw}}#}
-                    {#{% endif %}#}
-                        {#<div class="options_q_footer">#}
-                            {#<strong style="float: right"><i class="icon-user" style="color: white"></i> : 2-{{ quest.count }}{% if quest.maxCount %}({{ quest.maxCount }}){% endif %}</strong>#}
-                        {#</div>#}
-                    {#</a>#}
                 </div>
+                </a>
             {% else %}
-                <div class="col-lg-4 quest_blocks animated fadeInUpBig todown"
-                     style="background: url({% if quest.background %}'/uploads/{{ quest.background }}'{% elseif quest.image %}'/uploads/{{ quest.image }}'{% else %}'/images/logo/logo_w.png'{% endif %}) repeat 0 0 scroll;
-                     background-size: contain; opacity: 0.78;">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig todown">
+                     {#style="background: url#}
+                    <img class="qwests_img" src="{% if quest.background %}'/uploads/{{ quest.background }}'{% elseif quest.image %}'/uploads/{{ quest.image }}'{% else %}'/images/logo/logo_w.png'{% endif %}">
+
                     <div class="inproggress"></div>
                     <h2>{{ quest.title }}.
                         {% if quest.inprogress %}

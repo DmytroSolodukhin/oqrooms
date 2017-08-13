@@ -105,11 +105,11 @@ $(document).ready(function(){
 });
 
 $('.quest_block, .quest_blocks').hover(function(){
-		$(this).find('.transparency').css({'opacity': '0'});
+		$(this).find('.transparency').css({'opacity': '0.6'});
 		$(this).addClass('t2');
 	},
 	function(){
-		$(this).find('.transparency').css({'opacity': '0.6'});
+		$(this).find('.transparency').css({'opacity': '0'});
 		$(this).removeClass('t2');
 
 });

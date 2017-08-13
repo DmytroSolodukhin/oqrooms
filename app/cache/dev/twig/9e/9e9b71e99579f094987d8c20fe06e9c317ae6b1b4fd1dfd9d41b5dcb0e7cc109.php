@@ -26,20 +26,20 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6e2db5b5bbe1e32bae6d45e9b42312835b75060db383f5670cf8c833d94bb0db = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6e2db5b5bbe1e32bae6d45e9b42312835b75060db383f5670cf8c833d94bb0db->enter($__internal_6e2db5b5bbe1e32bae6d45e9b42312835b75060db383f5670cf8c833d94bb0db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebBundle:Default:quests.html.twig"));
+        $__internal_29de336602b0d45cb23f72442d7b60d92d8ebda2f9f3bf4a80c5cf6196ad7292 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_29de336602b0d45cb23f72442d7b60d92d8ebda2f9f3bf4a80c5cf6196ad7292->enter($__internal_29de336602b0d45cb23f72442d7b60d92d8ebda2f9f3bf4a80c5cf6196ad7292_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebBundle:Default:quests.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6e2db5b5bbe1e32bae6d45e9b42312835b75060db383f5670cf8c833d94bb0db->leave($__internal_6e2db5b5bbe1e32bae6d45e9b42312835b75060db383f5670cf8c833d94bb0db_prof);
+        $__internal_29de336602b0d45cb23f72442d7b60d92d8ebda2f9f3bf4a80c5cf6196ad7292->leave($__internal_29de336602b0d45cb23f72442d7b60d92d8ebda2f9f3bf4a80c5cf6196ad7292_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_e0606aa4ce784710e805c80e8a3b496b753e6b08cef5c9b66db60cf9055162e2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e0606aa4ce784710e805c80e8a3b496b753e6b08cef5c9b66db60cf9055162e2->enter($__internal_e0606aa4ce784710e805c80e8a3b496b753e6b08cef5c9b66db60cf9055162e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_abe2034094cc23209bd07b69949029018a64e24cec26739b69ce811937f00c79 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_abe2034094cc23209bd07b69949029018a64e24cec26739b69ce811937f00c79->enter($__internal_abe2034094cc23209bd07b69949029018a64e24cec26739b69ce811937f00c79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "            <title>
@@ -47,15 +47,15 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
             </title>
         ";
         
-        $__internal_e0606aa4ce784710e805c80e8a3b496b753e6b08cef5c9b66db60cf9055162e2->leave($__internal_e0606aa4ce784710e805c80e8a3b496b753e6b08cef5c9b66db60cf9055162e2_prof);
+        $__internal_abe2034094cc23209bd07b69949029018a64e24cec26739b69ce811937f00c79->leave($__internal_abe2034094cc23209bd07b69949029018a64e24cec26739b69ce811937f00c79_prof);
 
     }
 
     // line 7
     public function block_metateg($context, array $blocks = array())
     {
-        $__internal_a7601b335642a80ef8165e8438d8f95f4f79716f3e7986d98e7ada4eb22c509a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a7601b335642a80ef8165e8438d8f95f4f79716f3e7986d98e7ada4eb22c509a->enter($__internal_a7601b335642a80ef8165e8438d8f95f4f79716f3e7986d98e7ada4eb22c509a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "metateg"));
+        $__internal_6d474c6b7dac8d306bb9be62a6e6ba7a3201a5cccfa6aadbf3f7c85d2e20b6ed = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6d474c6b7dac8d306bb9be62a6e6ba7a3201a5cccfa6aadbf3f7c85d2e20b6ed->enter($__internal_6d474c6b7dac8d306bb9be62a6e6ba7a3201a5cccfa6aadbf3f7c85d2e20b6ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "metateg"));
 
         // line 8
         echo "    <meta name=\"description\" content=\"лучшие квест комнаты, ";
@@ -83,15 +83,15 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
         echo "квест, игра, загадки, лабиринт, головоломки, комната, квеструм, эскейпрум\" />
 ";
         
-        $__internal_a7601b335642a80ef8165e8438d8f95f4f79716f3e7986d98e7ada4eb22c509a->leave($__internal_a7601b335642a80ef8165e8438d8f95f4f79716f3e7986d98e7ada4eb22c509a_prof);
+        $__internal_6d474c6b7dac8d306bb9be62a6e6ba7a3201a5cccfa6aadbf3f7c85d2e20b6ed->leave($__internal_6d474c6b7dac8d306bb9be62a6e6ba7a3201a5cccfa6aadbf3f7c85d2e20b6ed_prof);
 
     }
 
     // line 12
     public function block_page_head_js($context, array $blocks = array())
     {
-        $__internal_36ad3c7f771746fda6aada912530f95b75d9f4f51edb81b29d2db97c17f66725 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_36ad3c7f771746fda6aada912530f95b75d9f4f51edb81b29d2db97c17f66725->enter($__internal_36ad3c7f771746fda6aada912530f95b75d9f4f51edb81b29d2db97c17f66725_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_head_js"));
+        $__internal_fecebb1726a8786ba127746fc83a82152ed29f04d4dc2ed2d665c3c5fab8da6a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fecebb1726a8786ba127746fc83a82152ed29f04d4dc2ed2d665c3c5fab8da6a->enter($__internal_fecebb1726a8786ba127746fc83a82152ed29f04d4dc2ed2d665c3c5fab8da6a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_head_js"));
 
         // line 13
         echo "    ";
@@ -99,26 +99,26 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
         echo "
 ";
         
-        $__internal_36ad3c7f771746fda6aada912530f95b75d9f4f51edb81b29d2db97c17f66725->leave($__internal_36ad3c7f771746fda6aada912530f95b75d9f4f51edb81b29d2db97c17f66725_prof);
+        $__internal_fecebb1726a8786ba127746fc83a82152ed29f04d4dc2ed2d665c3c5fab8da6a->leave($__internal_fecebb1726a8786ba127746fc83a82152ed29f04d4dc2ed2d665c3c5fab8da6a_prof);
 
     }
 
     // line 16
     public function block_welcome($context, array $blocks = array())
     {
-        $__internal_83558a671a50866e296cb00f55509b0cdf3de7bd185497fa46201b22a9f72965 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_83558a671a50866e296cb00f55509b0cdf3de7bd185497fa46201b22a9f72965->enter($__internal_83558a671a50866e296cb00f55509b0cdf3de7bd185497fa46201b22a9f72965_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "welcome"));
+        $__internal_1815c5b821e43c0f3aa6619aa57232d19514964bf83284e1468bd26f8051a913 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1815c5b821e43c0f3aa6619aa57232d19514964bf83284e1468bd26f8051a913->enter($__internal_1815c5b821e43c0f3aa6619aa57232d19514964bf83284e1468bd26f8051a913_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "welcome"));
 
         
-        $__internal_83558a671a50866e296cb00f55509b0cdf3de7bd185497fa46201b22a9f72965->leave($__internal_83558a671a50866e296cb00f55509b0cdf3de7bd185497fa46201b22a9f72965_prof);
+        $__internal_1815c5b821e43c0f3aa6619aa57232d19514964bf83284e1468bd26f8051a913->leave($__internal_1815c5b821e43c0f3aa6619aa57232d19514964bf83284e1468bd26f8051a913_prof);
 
     }
 
     // line 19
     public function block_content($context, array $blocks = array())
     {
-        $__internal_395524c4fba7804c000723385222397467d2cb68d75f7b9b3d2ada8b717c6aec = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_395524c4fba7804c000723385222397467d2cb68d75f7b9b3d2ada8b717c6aec->enter($__internal_395524c4fba7804c000723385222397467d2cb68d75f7b9b3d2ada8b717c6aec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_f18ce611f0423a938bb05576b3af7bf7d63ea4701ecce0ad897fdf945b4f58b9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f18ce611f0423a938bb05576b3af7bf7d63ea4701ecce0ad897fdf945b4f58b9->enter($__internal_f18ce611f0423a938bb05576b3af7bf7d63ea4701ecce0ad897fdf945b4f58b9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 20
         echo "<section>
@@ -158,66 +158,31 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
             echo "            ";
             if ( !$this->getAttribute($context["quest"], "inprogress", array())) {
                 // line 36
-                echo "                <div class=\"col-lg-4 quest_blocks animated fadeInUpBig\"
-                     style=\"background: url('/uploads/";
-                // line 37
+                echo "             <a href=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("web_quest", array("id" => $this->getAttribute($context["quest"], "id", array()))), "html", null, true);
+                echo "\"  title=\"";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
+                echo "\">
+                <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig\">
+                     ";
+                // line 39
+                echo "                   <img class=\"qwests_img\" src=\"/uploads/";
                 if ($this->getAttribute($context["quest"], "background", array())) {
                     echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "background", array()), "html", null, true);
                 } else {
                     echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "image", array()), "html", null, true);
                 }
-                echo "') repeat 0 0 scroll; background-size: contain;\">
-                    ";
-                // line 39
-                echo "                        ";
-                // line 40
-                echo "
-                            ";
-                // line 42
-                echo "                                ";
-                // line 43
-                echo "                                ";
-                // line 44
-                echo "                                    ";
-                // line 45
-                echo "                                        ";
-                // line 46
-                echo "                                    ";
-                // line 47
-                echo "                                ";
-                // line 48
-                echo "                            ";
-                // line 49
-                echo "                        ";
-                // line 50
-                echo "                    ";
-                // line 51
-                echo "                    ";
-                // line 52
-                echo "                    ";
-                // line 53
-                echo "
-                    ";
-                // line 55
-                echo "                        ";
-                // line 56
-                echo "                    ";
-                // line 57
-                echo "                        ";
-                // line 58
-                echo "                            ";
-                // line 59
-                echo "                        ";
-                // line 60
-                echo "                    ";
-                // line 61
-                echo "                </div>
+                echo "\">
+
+                </div>
+                </a>
             ";
             } else {
-                // line 63
-                echo "                <div class=\"col-lg-4 quest_blocks animated fadeInUpBig todown\"
-                     style=\"background: url(";
-                // line 64
+                // line 44
+                echo "                <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig todown\">
+                     ";
+                // line 46
+                echo "                    <img class=\"qwests_img\" src=\"";
                 if ($this->getAttribute($context["quest"], "background", array())) {
                     echo "'/uploads/";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "background", array()), "html", null, true);
@@ -229,61 +194,61 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
                 } else {
                     echo "'/images/logo/logo_w.png'";
                 }
-                echo ") repeat 0 0 scroll;
-                     background-size: contain; opacity: 0.78;\">
+                echo "\">
+
                     <div class=\"inproggress\"></div>
                     <h2>";
-                // line 67
+                // line 49
                 echo twig_escape_filter($this->env, $this->getAttribute($context["quest"], "title", array()), "html", null, true);
                 echo ".
                         ";
-                // line 68
+                // line 50
                 if ($this->getAttribute($context["quest"], "inprogress", array())) {
-                    // line 69
+                    // line 51
                     echo "                            ";
                     if ($this->getAttribute($context["quest"], "startTime", array())) {
-                        // line 70
+                        // line 52
                         echo "                                Открытие квеста (";
                         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["quest"], "startTime", array()), "d/m/y"), "html", null, true);
                         echo ")
                             ";
                     } else {
-                        // line 72
+                        // line 54
                         echo "                                Этот квест в процессе разработки
                             ";
                     }
-                    // line 74
+                    // line 56
                     echo "                        ";
                 }
-                // line 75
+                // line 57
                 echo "                    </h2>
                 </div>
             ";
             }
-            // line 78
+            // line 60
             echo "        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['quest'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 61
         echo "        </section>
     </div>
 </div>
 </section>
 ";
         
-        $__internal_395524c4fba7804c000723385222397467d2cb68d75f7b9b3d2ada8b717c6aec->leave($__internal_395524c4fba7804c000723385222397467d2cb68d75f7b9b3d2ada8b717c6aec_prof);
+        $__internal_f18ce611f0423a938bb05576b3af7bf7d63ea4701ecce0ad897fdf945b4f58b9->leave($__internal_f18ce611f0423a938bb05576b3af7bf7d63ea4701ecce0ad897fdf945b4f58b9_prof);
 
     }
 
-    // line 85
+    // line 67
     public function block_footer_js($context, array $blocks = array())
     {
-        $__internal_4479d7c46b06e102df9c5effe9d5c94e7fff63ea0f3b09d05f3ddd30eb42e20b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4479d7c46b06e102df9c5effe9d5c94e7fff63ea0f3b09d05f3ddd30eb42e20b->enter($__internal_4479d7c46b06e102df9c5effe9d5c94e7fff63ea0f3b09d05f3ddd30eb42e20b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer_js"));
+        $__internal_9422e5326c1dd0db703f0baad67dca2a2e50787bfdd3e204e716e2ea408f7780 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9422e5326c1dd0db703f0baad67dca2a2e50787bfdd3e204e716e2ea408f7780->enter($__internal_9422e5326c1dd0db703f0baad67dca2a2e50787bfdd3e204e716e2ea408f7780_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer_js"));
 
-        // line 86
+        // line 68
         echo "    ";
         $this->displayParentBlock("footer_js", $context, $blocks);
         echo "
@@ -292,7 +257,7 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
     </script>
 ";
         
-        $__internal_4479d7c46b06e102df9c5effe9d5c94e7fff63ea0f3b09d05f3ddd30eb42e20b->leave($__internal_4479d7c46b06e102df9c5effe9d5c94e7fff63ea0f3b09d05f3ddd30eb42e20b_prof);
+        $__internal_9422e5326c1dd0db703f0baad67dca2a2e50787bfdd3e204e716e2ea408f7780->leave($__internal_9422e5326c1dd0db703f0baad67dca2a2e50787bfdd3e204e716e2ea408f7780_prof);
 
     }
 
@@ -308,7 +273,7 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
 
     public function getDebugInfo()
     {
-        return array (  287 => 86,  281 => 85,  270 => 79,  264 => 78,  259 => 75,  256 => 74,  252 => 72,  246 => 70,  243 => 69,  241 => 68,  237 => 67,  221 => 64,  218 => 63,  214 => 61,  212 => 60,  210 => 59,  208 => 58,  206 => 57,  204 => 56,  202 => 55,  199 => 53,  197 => 52,  195 => 51,  193 => 50,  191 => 49,  189 => 48,  187 => 47,  185 => 46,  183 => 45,  181 => 44,  179 => 43,  177 => 42,  174 => 40,  172 => 39,  164 => 37,  161 => 36,  158 => 35,  154 => 34,  149 => 31,  138 => 29,  134 => 28,  124 => 20,  118 => 19,  107 => 16,  97 => 13,  91 => 12,  74 => 9,  61 => 8,  55 => 7,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  252 => 68,  246 => 67,  235 => 61,  229 => 60,  224 => 57,  221 => 56,  217 => 54,  211 => 52,  208 => 51,  206 => 50,  202 => 49,  185 => 46,  182 => 44,  169 => 39,  161 => 36,  158 => 35,  154 => 34,  149 => 31,  138 => 29,  134 => 28,  124 => 20,  118 => 19,  107 => 16,  97 => 13,  91 => 12,  74 => 9,  61 => 8,  55 => 7,  45 => 3,  39 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -356,36 +321,18 @@ class __TwigTemplate_e7d6a3ad5214430ad100ae3a88748411a1442d9dc4e902e36f4f6edf448
             </div>
         {% for quest in quests %}
             {% if not quest.inprogress %}
-                <div class=\"col-lg-4 quest_blocks animated fadeInUpBig\"
-                     style=\"background: url('/uploads/{% if quest.background %}{{ quest.background }}{% else %}{{ quest.image }}{% endif %}') repeat 0 0 scroll; background-size: contain;\">
-                    {#<a href=\"{{ path('web_quest', {'id': quest.id}) }}\"  title=\"{{ quest.title }}\">#}
-                        {#<div class=\"options_q\">#}
+             <a href=\"{{ path('web_quest', {'id': quest.id}) }}\"  title=\"{{ quest.title }}\">
+                <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig\">
+                     {#style=\"background: #}
+                   <img class=\"qwests_img\" src=\"/uploads/{% if quest.background %}{{ quest.background }}{% else %}{{ quest.image }}{% endif %}\">
 
-                            {#<strong style=\"float: right; margin: -5px 0 0;\">#}
-                                {#Cложность :#}
-                                {#{% for i in 0..4 %}#}
-                                    {#{% if i <= quest.complexity %}#}
-                                        {#<img src=\"/images/omega.png\" width=\"20px\" alt=\"{{ quest.title }} big complexity\">#}
-                                    {#{% endif %}#}
-                                {#{% endfor %}#}
-                            {#</strong>#}
-                        {#</div>#}
-                    {#<div class=\"transparency\"></div>#}
-                    {#<strong>{{ quest.city.title }}</strong>#}
-                    {#<h2>{{ quest.title }}</h2>#}
-
-                    {#{% if quest.description|length > 300 %}{{ quest.description|slice(0, 300)|raw }}...</p>{% else %}#}
-                        {#{{  quest.description|raw}}#}
-                    {#{% endif %}#}
-                        {#<div class=\"options_q_footer\">#}
-                            {#<strong style=\"float: right\"><i class=\"icon-user\" style=\"color: white\"></i> : 2-{{ quest.count }}{% if quest.maxCount %}({{ quest.maxCount }}){% endif %}</strong>#}
-                        {#</div>#}
-                    {#</a>#}
                 </div>
+                </a>
             {% else %}
-                <div class=\"col-lg-4 quest_blocks animated fadeInUpBig todown\"
-                     style=\"background: url({% if quest.background %}'/uploads/{{ quest.background }}'{% elseif quest.image %}'/uploads/{{ quest.image }}'{% else %}'/images/logo/logo_w.png'{% endif %}) repeat 0 0 scroll;
-                     background-size: contain; opacity: 0.78;\">
+                <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 quest_blocks bg-resp  animated fadeInUpBig todown\">
+                     {#style=\"background: url#}
+                    <img class=\"qwests_img\" src=\"{% if quest.background %}'/uploads/{{ quest.background }}'{% elseif quest.image %}'/uploads/{{ quest.image }}'{% else %}'/images/logo/logo_w.png'{% endif %}\">
+
                     <div class=\"inproggress\"></div>
                     <h2>{{ quest.title }}.
                         {% if quest.inprogress %}

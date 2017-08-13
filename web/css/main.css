@@ -49,7 +49,7 @@ a {
     z-index: 2;
     background-size: cover;
     width: 100%;
-    height: 110vh;
+    height: 90vh;
     margin: auto;
     opacity: 1;
 }
@@ -235,9 +235,9 @@ blockquote a {
     font-family: 'Montserrat', Helvetica, sans-serif;
 }
 .quest_block .transparency, .quest_blocks .transparency {
-    opacity:0.6;
-    filter:alpha(opacity=60);
-    -moz-opacity:0.6;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
     background-color:#0b191d;
     width:100%;
     height:100%;
@@ -248,9 +248,9 @@ blockquote a {
 }
 
 .quest_block .inproggress, .quest_blocks .inproggress {
-    opacity:0.6;
-    filter:alpha(opacity=60);
-    -moz-opacity:0.6;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
 
     width:100%;
     height:100%;
@@ -399,7 +399,7 @@ footer {
 }
 
 .logop {
-    width: 30%;
+    width: 35%;
     z-index: 5;
     position: absolute;
     top: 30px;
@@ -418,6 +418,7 @@ footer {
     color: #FFFFFF;
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 .price {
@@ -527,10 +528,10 @@ i {
 }
 
 .quest_blocks p, .quest_blocks li {
-    font-size: 29px;
-    font-weight: bold;
-    text-indent: 1.5em;
-    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    /*text-indent: 1.5em;*/
+    /*text-align: left;*/
 }
 
 .scroll {
@@ -540,9 +541,9 @@ i {
 }
 
 .index_text_block p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    text-indent: 1.5em;
+    /*text-indent: 1.5em;   if will be brocen uncommit this*/
     text-shadow: 1px 1px darkgrey;
     padding: 17px;
 }
@@ -564,7 +565,7 @@ i {
 }
 
 p {
-    text-indent: 20px;
+    /*text-indent: 20px;*/
 }
 
 .col-sm-1{
@@ -648,7 +649,7 @@ i:hover {
     border-radius: 8px;
     display: none;
     height: 100%;
-    padding: 20px;
+    /*padding: 20px;*/
     position: fixed;
     top: 25px;
     width: 100%;
@@ -696,7 +697,7 @@ hr {
         border: 6px solid black;
         border-radius: 8px;
         display: none;
-        height: 90vh;
+        height: 100vh;
         /*left: 20%;*/
        margin: 0 auto;
         left: 0;
@@ -738,6 +739,7 @@ hr {
         margin-top: 21px;
         font-size: 26px;
     }
+
 
     hr {
         margin-top: 21px;
@@ -850,7 +852,7 @@ i.icon-envelope {
  .intro-text {
      color: #FFF;
      line-height: 65px;
-     padding-top: 25%;
+     padding-top: 30%;
      text-transform: uppercase;
      font-size: 55px;
      font-family: 'Montserrat', Helvetica, sans-serif;
@@ -872,18 +874,33 @@ em {
     font-style: normal;
 }
 
+.img_gift > * {
+    text-align: center;
+}
+
+.qwests_img {
+    width: 100%;
+    height: auto;
+}
+
 
 @media (max-width: 1100px) {
     .intro-text {
-        font-size: 45px;
+        font-size: 40px;
+    }
+    .parallax {
+        height: 55vh;
     }
 }
 
 @media (max-width: 740px) {
     .intro-text {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 28px;
+        line-height: 28px;
         padding-top: 35%;
+    }
+    h1 {
+        font-size: 30px!important;
     }
     .sotial {
         display: block;
@@ -895,7 +912,14 @@ em {
     .responsive-center {
         text-align: center;
     }
-    .parallax {
-        height: 100vh;
+
+    .quest_blocks p {
+        font-size: 18px!important;
     }
+}
+
+
+.index_text_block_quest p > img {
+    width: 100%!important;
+    height: auto!important;
 }
